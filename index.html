@@ -1,1 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coin Flip</title>
+</head>
+<body style="text-align:center; font-family:sans-serif;">
+    <h1>Coin Flip</h1>
+    <h2 id="result">Click to flip</h2>
+    <button onclick="flip()">Flip Coin</button>
 
+    <script>
+        function flip() {
+            const result = Math.random() < 0.5 ? "Heads" : "Tails";
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>
